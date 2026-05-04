@@ -3,42 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>부트스트랩 - INVEST</title>
+    <title>부트스트랩</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <!-- Link Swiper's CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
-
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
+
     <header>
-        <nav class="navbar navbar-expand-lg bg-white fixed-top">
+        <nav class="navbar navbar-expand-md bg-white fixed-top" >
             <div class="container-xl">
-            <a class="navbar-brand" href="#">LOGO</a>
+            <a class="navbar-brand fw-semibold" href="#">INVEST</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">LOGO</h5>
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">INVEST</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
                 <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                     <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">홈</a>
+                        <a class="nav-link active" aria-current="page" href="#">회사소개</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#">회사소개</a>
+                        <a class="nav-link" href="#">사업안내</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#">주요제품</a>
+                        <a class="nav-link" href="#">분양안내</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#">서비스</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#">테마</a>
+                        <a class="nav-link" href="#">고객센터</a>
                     </li>
                 </ul>
                 </div>
@@ -47,218 +42,184 @@
         </nav>
     </header>
 
-    <section class="hero-sec">
-          <!-- Swiper -->
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="./assets/images/hero-img01.webp" alt="">
-                        <div class="hero-text">
-                            <p class="text-uppercase fw-bold">All for Humans</p>
-                            <h2 class="fw-bold">
-                                함께 성장하는 기업 <br>
-                                끊임없는 열정
-                            </h2>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./assets/images/hero-img02.webp" alt="">
-                        <div class="hero-text">
-                            <p>All for Humans</p>
-                            <h2>
-                                함께 성장하는 기업 <br>
-                                끊임없는 열정
-                            </h2>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./assets/images/hero-img01.webp" alt="">
-                        <div class="hero-text">
-                            <p>All for Humans</p>
-                            <h2>
-                                함께 성장하는 기업 <br>
-                                끊임없는 열정
-                            </h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-pagination"></div>
-            </div>
-    </section>
+    
+    <section class="kv-sec">
 
-    <section class="business-sec sec-pt">  
-        <div class="container-xl">
-            <div class="title-wrap text-center w-500">
-                <h2 class="title">
-                    당신을 위한 <br>꿈과 미래가 있는 곳
-                </h2>
-                <p class="desc mt-20">
-                    우수한 글로벌 연구자들과 함께 첨단 기술을 누구나 손쉽게 활용할 수 있도록 가깝게 연결하여 내일의 기술을 일상으로 바꾸고 있습니다.
-                </p>
+        <div id="carouselExampleIndicators" class="carousel slide carousel-fade">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
-            <div class="business-contents mt-80">
-                <div class="row">
-                    <div class="col-md-4 text-center mb-4 mb-md-0">
-                        <img class="w-100" src="./assets/images/business-img01.webp" alt="기회와 성과들">
-                        <h3 class="contents-title">기회와 성과들</h3>
-                        <p class="desc">제품별 사용 정보와 생활 패턴을 체크하여 나 뿐만 아니라 우리 가족 개개인에 맞는 맞춤 솔루션</p>
-                    </div>
-                    <div class="col-md-4 text-center mb-4 mb-md-0">
-                        <img class="w-100" src="./assets/images/business-img02.webp" alt="상상이 비즈니스가 되다">
-                        <h3 class="contents-title">상상이 비즈니스가 되다</h3>
-                        <p class="desc">공장이 아닌 일상의 로봇을 연구합니다. 로봇들의 두뇌가 되는 클라우드 기술, 사람과의 공존을 의미</p>
-                    </div>
-                    <div class="col-md-4 text-center">
-                        <img class="w-100" src="./assets/images/business-img03.webp" alt="검색 기술의 고도화">
-                        <h3 class="contents-title">검색 기술의 고도화</h3>
-                        <p class="desc">기술의 가치 있는 연결을 통해 창작자, 그리고 다음 세대의 성장에 언제나 함께하고 있습니다.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="info-sec sec-py">
-        <div class="container-xl">
-            <div class="title-wrap text-center w-500">
-                <h2 class="title">
-                    미래를 만들어 갑니다
-                </h2>
-                <p class="desc mt-20">
-                    다가오는 내일을 한발 앞서 상상합니다. 각 분야의 실력 있는 개발자들이 모여 있기에, 도전적인 목표를 향해 나아갈 수 있습니다.
-                </p>
-            </div>
-        </div>
-
-        <div class="info-wrap mt-80">
-            <div class="container-xl">
-                <div class="row">
-                    <div class="col-xl-3 col-sm-6 text-center">
-                        <div class="info-card">
-                            <img src="./assets/images/ico-info-01.png" alt="기업가치">
-                            <h3 class="contents-title">기업가치</h3>
-                            <p class="desc">
-                                더 기막힌 에너지로<br>더 나은 삶을 추구하다
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-sm-6 text-center">
-                        <div class="info-card">
-                            <img src="./assets/images/ico-info-01.png" alt="기업가치">
-                            <h3 class="contents-title">인재상</h3>
-                            <p class="desc">
-                                최선을 다하면서<br>묵묵히 일하는 사람
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-sm-6 text-center">
-                        <div class="info-card">
-                            <img src="./assets/images/ico-info-01.png" alt="성장도">
-                            <h3 class="contents-title">성장도</h3>
-                            <p class="desc">
-                                끊임없는 노력으로<br>미래를 준비하는 마음
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-sm-6 text-center">
-                        <div class="info-card">
-                            <img src="./assets/images/ico-info-01.png" alt="기술지원">
-                            <h3 class="contents-title">기술지원</h3>
-                            <p class="desc">
-                                언제나 고객의 곁에서<br>도움을 주는 기사
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="message-sec">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="message-text">
-                        <h2 class="title">
-                            정말 중요한<br>메세지를 전해요
-                        </h2>
-                        <div class="text-line"></div>
-                        <p class="desc">
-                            사이트에서 수치 데이터를 시각적으로 표현하는 것은 고객에게 다양한 여행지 선택, 예약 정보, 고객 만족도 등을 이해시키는 데 매우 효과적입니다. 수치를 활용한 여행 페이지는 사용자에게 명확한 정보를 제공하며, 통계 데이터를 시각적으로 표현해 여행 계획을 쉽게 세울 수 있도록 도와줍니다. 이 섹션은 정말 중요한 컨텐츠가 있을 때 사용하시는게 좋습니다. 워낙에 시각적으로 눈길이 가는 영역이라 회사의 핵심을 이곳에 강력한 요소로 배치하시면 좋습니다.
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./assets/images/visual-img01.jpg" class="d-block w-100" alt="...">
+                    <div class="container-xl kv-text">
+                        <h2 class="kv-title display-1 fw-bold">Invest in <br>Your Future</h2>
+                        <p class="kv-desc">모두가 동경하는, 세월이 지나도 변치 않는 상징적인 공간을 소유하며 그 특별한 가치를 경험하세요. (첫 번째)
                         </p>
-                        <button class="btn btn-bg-primary">엄청난 제품 소개</button>
+                    </div>
+
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/images/visual-img02.jpg" class="d-block w-100" alt="...">
+                    <div class="container-xl kv-text ">
+                        <h2 class="kv-title display-1 fw-bold">Invest in <br>Your Future</h2>
+                        <p class="kv-desc">모두가 동경하는, 세월이 지나도 변치 않는 상징적인 공간을 소유하며 그 특별한 가치를 경험하세요. (두 번째)
+                        </p>
                     </div>
                 </div>
-                <div class="col-md-6 message-img">
+                <div class="carousel-item">
+                    <img src="./assets/images/visual-img03.jpg" class="d-block w-100" alt="...">
+                    <div class="container-xl kv-text">
+                        <h2 class="kv-title display-1 fw-bold">Invest in <br>Your Future</h2>
+                        <p class="kv-desc">모두가 동경하는, 세월이 지나도 변치 않는 상징적인 공간을 소유하며 그 특별한 가치를 경험하세요. (세 번째)
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="info-sec sec-pd">
+        <div class="container-xl">
+            <div class="title-wrap text-center mb-4">
+                <h2 class="title fs-1 fw-bold">Experience Elevated Living</h2>
+                <p class="desc fs-5">
+                    시간이 흘러도 변치 않는 우아함과 아름다움을 지닌 공간에서 <br>
+                    특별한 삶의 순간을 만끽하세요.
+                </p>
+            </div>
+            <div class="info-list-wrap text-center">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6 info-list info-list01 d-flex justify-content-center align-items-center">
+                        <div class="info-text">
+                            <h3 class="info-list-title fs-5 fw-bold">LUXURY</h3>
+                            <p class="info-list-desc">럭셔리와 편안함이 만나는 곳에서, 매일매일의 삶을 더욱 특별하게 만들어 보세요.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 info-list info-list02 d-flex justify-content-center align-items-center">
+                        <div class="info-text">
+                            <h3 class="info-list-title fs-5 fw-bold">LUXURY</h3>
+                            <p class="info-list-desc">럭셔리와 편안함이 만나는 곳에서, 매일매일의 삶을 더욱 특별하게 만들어 보세요.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 info-list info-list03 d-flex justify-content-center align-items-center">
+                        <div class="info-text">
+                            <h3 class="info-list-title fs-5 fw-bold">LUXURY</h3>
+                            <p class="info-list-desc">럭셔리와 편안함이 만나는 곳에서, 매일매일의 삶을 더욱 특별하게 만들어 보세요.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 info-list info-list04 d-flex justify-content-center align-items-center">
+                        <div class="info-text">
+                            <h3 class="info-list-title fs-5 fw-bold">LUXURY</h3>
+                            <p class="info-list-desc">럭셔리와 편안함이 만나는 곳에서, 매일매일의 삶을 더욱 특별하게 만들어 보세요.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="buisiness-sec sec-pd">
+        <div class="container-xl">
+            <div class="row">
+                <div class="col-xl-6">
+                    <div class="title-wrap">
+                        <h2 class="title fs-1 fw-bold">Invest in Your Future</h2>
+                        <p class="desc fs-5">
+                            INVEST는 당신의 꿈과 미래를 위한 최적의 부동산 솔루션을 제공합니다. <br>
+                            저희는 고객의 필요와 목표에 맞춘 맞춤형 서비스를 통해 안정적이고 수익성 높은 투자 기회를 창출합니다. <br>
+                            전문적인 팀이 시장 분석부터 매물 추천, 계약 체결까지 모든 과정을 지원하여, 고객이 안심하고 투자할 수 있도록 돕습니다. <br>
+                            부동산 투자에 대한 모든 궁금증을 해결하고, 성공적인 미래를 함께 만들어가는 INVEST와 함께하세요. <br>
+                            당신의 소중한 자산을 안전하게 관리하고, 더 나은 내일을 위한 첫걸음을 내딛으세요.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <img class="img-fluid" src="./assets/images/benefit-img.jpg" alt="buisiness image">
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="data-sec">
+    <section class="benefit-sec sec-pd">
         <div class="container-xl">
-            <div class="row">
-                <div class="col-lg-4 mb-4 mb-lg-0">
-                    <div class="data-contents text-center">
-                        <img src="./assets/images/ico-data.png" alt="데이터 수치">
-                        <h2 class="data-title">
-                            9,846
-                            <span>Kg</span>
-                        </h2>
-                        <p class="fw-bold">중요한 데이터 수치</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 mb-4 mb-lg-0">
-                    <div class="data-contents text-center">
-                        <img src="./assets/images/ico-data.png" alt="데이터 수치">
-                        <h2 class="data-title">
-                            1,848
-                            <span>ml</span>
-                        </h2>
-                        <p class="fw-bold">평균 중량 감소치</p>
+            <div class="title-wrap text-center mb-4">
+                <h2 class="title fs-1 fw-bold">Sanctuary of Sophistication</h2>
+                <p class="desc fs-5">
+                    편안함과 세련미가 조화를 이루는 공간에서, <br>
+                    당신만의 안식처를 만들어 보세요.
+                </p>
+            </div>
+            <div class="benefit-list-wrap row">
+                <div class="col-lg-4">
+                    <img class="w-100" src="./assets/images/business-img03.jpg" alt="...">
+                    <div class="benefit-list-txt text-center mt-4">
+                        <h5 class="benefit-sub-title fs-6 fw-medium">FACILITIES</h5>
+                        <h3 class="benefit-title fs-4 fw-bold">편리한 시설</h3>
+                        <p>모든 편의가 한 곳에</p>
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="data-contents text-center">
-                        <img src="./assets/images/ico-data.png" alt="데이터 수치">
-                        <h2 class="data-title">
-                            79.99
-                            <span>%</span>
-                        </h2>
-                        <p class="fw-bold">신재생 에너지 비율</p>
+                    <img class="w-100" src="./assets/images/business-img01.jpg" alt="...">
+                    <div class="benefit-list-txt text-center mt-4">
+                        <h5 class="benefit-sub-title fs-6 fw-medium">ACCEBILITY</h5>
+                        <h3 class="benefit-title fs-4 fw-bold">편리한 교통</h3>
+                        <p>초역세권으로 이동 편리한 위치</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <img class="w-100" src="./assets/images/business-img02.jpg" alt="...">
+                    <div class="benefit-list-txt text-center mt-4">
+                        <h5 class="benefit-sub-title fs-6 fw-medium">COMMUNITY</h5>
+                        <h3 class="benefit-title fs-4 fw-bold">활기찬 커뮤니티</h3>
+                        <p>다양한 커뮤니티 활동이 이루어지는 지역</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <section class="contact-sec sec-pd">
+        <div class="container-xl">
+            <div class="title-wrap text-center">
+                <h2 class="title fs-1 fw-bold">Dreams in Design</h2>
+                <p class="desc fs-5 py-3">
+                    당신의 꿈이 현실로 이루어지는 공간에서 창의력과 영감을 만끽하며, <br>
+                    새로운 가능성을 탐험해보세요.
+                </p>
+                <button type="button" class="btn btn-primary px-4 py-2">View More</button>
+            </div>
+        </div>
+    </section>
 
-
-
+    <footer class="footer-sec pt-5 pb-5">
+        <div class="container-xl">
+            <div class="title-wrap">
+                <h2 class="title fs-5">INVEST</h2>
+                <div class="footer-text">
+                    <ul class="d-flex gap-1 gap-sm-3 flex-column flex-sm-row mb-0 mt-3">
+                        <li>상호명: INVEST</li>
+                        <li>대표자: OOO</li>
+                        <li>사업자번호: OOO-OO-OOOOO</li>
+                    </ul>
+                    <ul class="d-flex gap-1 gap-sm-3  flex-column flex-sm-row">
+                        <li>고객센터: OOOO-OOOO</li>
+                        <li>이메일: investsamle@invest.com</li>
+                        <li>주소: 인천광역시 부평구 체육관로 40</li>
+                    </ul>
+                </div>
+                <p class="copyright mt-3 pt-3">
+                    Copyright ⓒ INVEST-Sample All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-
-
-      <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-
-  <!-- Initialize Swiper -->
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      pagination: {
-        el: ".swiper-pagination",
-      },
-    });
-  </script>
-  </body>
-    
 </body>
 </html>
